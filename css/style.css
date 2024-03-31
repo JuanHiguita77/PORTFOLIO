@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root
+{
+    --primary-color: #000;
+    --secondary-color: #bababa;
+    --white-color: #fff;
+    --gray-variant: #2c2b2b;
+    --primary-font: "Open Sans", sans-serif;
+    --secondary-font: "Lato", sans-serif;
+}
+
+html 
+{
+    scroll-behavior: smooth;
+}
+
+section
+{
+    opacity: 1; /* Inicialmente, las secciones estarán ocultas */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.aparecer 
+{
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+p
+{
+    font-family: var(--primary-font);
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: var(--secondary-font);
+}
+  
+#navbar  
+{
+    padding: 0 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 3px 6px rgba(213, 213, 213, 0.6);
+}
+
+#navbar .navbar-brand
+{
+    animation: pulse 2s infinite ease-in-out;
+}
+
+/*NAVBAR STYLES*/
+#mainNabvar .nav-item .nav-link
+{
+    color: var(--white-color);
+    font-family: var(--primary-font);
+}
+
+#mainNabvar .nav-item .nav-link:hover
+{
+    color: var(--secondary-color);
+    transition: 0.2s ease-in-out;
+}
+
+@keyframes pulse 
+{
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+  
+
+/*NAVBAR STYLES*/
+
+
+/*BANNER STYLES*/
+#main-banner 
+{
+    height: 90vh;
+    background-color: #313131;
+    background-image: url('../images/profileImage.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    filter: grayscale(0.50);
+    background-size: 70%;
+    position: relative;
+    top: 20px;
+
+}
+
+
+#main-banner .banner-left
+{
+    height: 90vh;
+    align-items: center;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+}
+
+#main-banner .banner-right
+{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    background-color: var(--gray-variant);
+    padding-top: 40px;
+}
+
+#main-banner .banner-right p
+{
+    width: 85%;
+}
+
+#main-banner h2
+{
+    font-size: 2.5rem;
+}
+
+#main-banner hr
+{
+    border: 2px solid var(--white-color);
+}
+
+#main-banner .contact-button, .me-button
+{
+    transition: 0.4s all ease-out;
+}
+
+
+@media screen and (min-width: 480px) 
+{
+    /*BANNER STYLES*/
+    #main-banner 
+    {
+        background-size: 60%;
+    }
+}
+
+@media screen and (min-width: 601px)  
+{
+    /*BANNER STYLES*/
+    #main-banner 
+    {
+        background-size: 50%;
+    }
+}
+
+@media screen and (min-width: 769px) 
+{
+    #mainNabvar .nav-link
+    {
+        font-size: 1.4rem;
+    }
+
+    /*BANNER STYLES*/
+    #main-banner 
+    {
+        background-size: 75%;
+    }
+
+    #main-banner h2
+    {
+        font-size: 3rem;
+    }
+
+    #main-banner .banner-right p
+    {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 992px) 
+{
+    /*BANNER STYLES*/
+    #main-banner 
+    {
+        height: 100vh;
+        background-size: 60%;
+        background-color: var(--gray-variant);
+    }
+
+    #main-banner .banner-left
+    {
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    #main-banner .banner-right
+    {
+        background-color: transparent;
+        align-items: end;
+        padding-top: 60px;
+        justify-content: start;
+    }
+
+    #main-banner .banner-right h2
+    {
+        width: 75%;
+        margin-right: -5% !important;
+    }
+
+    #main-banner .banner-right h3
+    {
+        margin-right: 8%;
+    }
+
+    #main-banner .banner-right p
+    {
+        width: 75%;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1024px)  
+{
+   /*BANNER STYLES*/
+   #main-banner 
+   { 
+        background-size: 50%;
+   }
+
+   #main-banner .banner-left
+   {
+        align-items: baseline;
+        justify-content: center;
+   }
+
+   #main-banner .banner-right p
+   {
+       width: 60%;
+       font-size: 1.2rem;
+   }
+}
+
+@media screen and (min-width: 1280px) 
+{
+    /*BANNER STYLES*/
+    #main-banner 
+    { 
+        background-size: 50%;
+    }
+ 
+    #main-banner .banner-right p
+    {
+        width: 65%;
+        font-size: 1.5rem;
+    }
+}
+
+
