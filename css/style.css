@@ -86,12 +86,11 @@ h1, h2, h3, h4, h5, h6
     background-repeat: no-repeat;
     background-position: center bottom;
     filter: grayscale(0.50);
-    background-size: 70%;
+    background-size: 85%;
     position: relative;
     top: 20px;
 
 }
-
 
 #main-banner .banner-left
 {
@@ -234,7 +233,7 @@ h1, h2, h3, h4, h5, h6
    #main-banner .banner-right p
    {
        width: 60%;
-       font-size: 1.2rem;
+       font-size: 1.1rem;
    }
 }
 
