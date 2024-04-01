@@ -8,6 +8,7 @@
     --secondary-color: #bababa;
     --white-color: #fff;
     --gray-variant: #2c2b2b;
+    --gray-background: #313131;
     --primary-font: "Open Sans", sans-serif;
     --secondary-font: "Lato", sans-serif;
 }
@@ -21,6 +22,7 @@ section
 {
     opacity: 1; /* Inicialmente, las secciones estarán ocultas */
     transition: opacity 0.5s ease, transform 0.5s ease;
+    background-color: var(--gray-variant);
 }
 
 section.aparecer 
@@ -32,11 +34,13 @@ section.aparecer
 p
 {
     font-family: var(--primary-font);
+    color: var(--white-color);
 }
 
 h1, h2, h3, h4, h5, h6
 {
     font-family: var(--secondary-font);
+    font-size: 2.5rem;
 }
   
 #navbar  
@@ -66,6 +70,7 @@ h1, h2, h3, h4, h5, h6
     transition: 0.2s ease-in-out;
 }
 
+/*Logo animation*/
 @keyframes pulse 
 {
     0% { opacity: 0.5; }
@@ -77,19 +82,18 @@ h1, h2, h3, h4, h5, h6
 /*NAVBAR STYLES*/
 
 
-/*BANNER STYLES*/
+/*MAIN BANNER STYLES*/
 #main-banner 
 {
-    height: 90vh;
+    
     background-color: #313131;
     background-image: url('../images/profileImage.png');
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center 35%;
     filter: grayscale(0.50);
     background-size: 85%;
     position: relative;
     top: 20px;
-
 }
 
 #main-banner .banner-left
@@ -131,13 +135,50 @@ h1, h2, h3, h4, h5, h6
     transition: 0.4s all ease-out;
 }
 
+/*SECTION TALENTS STYLES*/
+#talents-section
+{
+    background-color: var(--gray-background);
+}
 
+#talents-section h3
+{
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+}
+
+#talents-section h2
+{
+    font-size: 2.5rem;
+}
+
+#talents-section .talent-square 
+{
+    background-color: #d9d9d9;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s all ease-out;
+}
+
+#talents-section .talent-square:hover 
+{
+    transform: translateY(-10px);
+    transform: scale(1.10);
+    background-color: var(--gray-variant);
+    color: white;
+}
+
+/*SECTION TALENTS STYLES*/
+
+/*MEDIA QUERIES*/
 @media screen and (min-width: 480px) 
 {
     /*BANNER STYLES*/
     #main-banner 
     {
         background-size: 60%;
+        background-position: center 37%;
     }
 }
 
@@ -161,6 +202,7 @@ h1, h2, h3, h4, h5, h6
     #main-banner 
     {
         background-size: 75%;
+        background-position: center 34%;
     }
 
     #main-banner h2
@@ -172,6 +214,14 @@ h1, h2, h3, h4, h5, h6
     {
         font-size: 1.3rem;
     }
+
+    /*TALENTS STYLES*/
+    #talents-section .talents-container p
+    {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+   /*TALENTS STYLES*/
 }
 
 @media screen and (min-width: 992px) 
@@ -182,6 +232,7 @@ h1, h2, h3, h4, h5, h6
         height: 100vh;
         background-size: 60%;
         background-color: var(--gray-variant);
+        background-position: center 100%;
     }
 
     #main-banner .banner-left
@@ -235,6 +286,18 @@ h1, h2, h3, h4, h5, h6
        width: 60%;
        font-size: 1.1rem;
    }
+
+   /*TALENTS STYLES*/
+   #talents-section .talents-container h2
+   {
+        font-size: 3rem;
+   }
+
+   #talents-section .talents-container p
+   {
+        font-size: 1.4rem;
+   }
+   /*TALENTS STYLES*/
 }
 
 @media screen and (min-width: 1280px) 
@@ -248,7 +311,7 @@ h1, h2, h3, h4, h5, h6
     #main-banner .banner-right p
     {
         width: 65%;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 

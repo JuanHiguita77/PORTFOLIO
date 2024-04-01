@@ -1,12 +1,13 @@
-window.addEventListener('scroll', () => 
-{
-    document.querySelectorAll('section').forEach(seccion => {
-      const posicion = seccion.getBoundingClientRect().top;
-      const alturaPantalla = window.innerHeight / 1.3;
-  
-      if (posicion < alturaPantalla) 
-      {
-        seccion.classList.add('aparecer');
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute('href'));
+
+      if (target) {
+          target.scrollIntoView({
+              behavior: 'smooth'
+          });
       }
-    });
   });
+});
