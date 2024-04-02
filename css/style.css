@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
 :root
 {
     --primary-color: #000;
@@ -198,7 +199,7 @@ h1, h2, h3, h4, h5, h6
 #projects-section .project-card
 {
     width: 100%;
-    height: 340px;
+    height: 280px;
     transition: 0.3s all ease-out;
 }
 
@@ -214,6 +215,115 @@ h1, h2, h3, h4, h5, h6
 }
 
 /*PROJECTS SECTION*/
+
+/*CONTACT FORM STYLES*/
+#contact-section
+{
+    background-color: var(--gray-background);
+}
+
+#contact-section .title-form-container h2
+{
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-family: var(--secondary-font);
+}
+
+#contact-section .form-input 
+{
+    color: var(--white-color);
+    padding: 18px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2.2px solid var(--variant-color);
+    border-radius: 0;
+    outline: 0 none;
+    transition: 0.3s all ease-out;  
+}
+  
+#contact-section .form-input::placeholder 
+{
+    font-family: var(--primary-font);
+    font-weight: lighter;
+    font-size: 1.1rem;
+    color: var(--white-color);
+}
+
+#contact-section .form-input:focus 
+{
+    border-color: var(--white-color) !important;
+    outline:0 none !important;
+    transform: scale(1.05);
+}
+  
+#contact-section .contact-form h2
+{
+    font-family: var(--secondary-font);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#contact-section .send-button 
+{
+    border-color: var(--white-color);
+    padding: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: 0.3s all ease-out;
+    border-radius: 0;
+    color: var(--white-color);
+}
+  
+#contact-section .send-button:hover 
+{
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+    transform: scale(0.9);
+}
+/*CONTACT FORM STYLES*/
+
+/*FOOTER STYLES*/
+.footer 
+{
+    background-color: #343a40; 
+    color: #ffffff; 
+    padding: 20px 0;
+}
+
+.footer .back-to-top-btn 
+{
+    border: 2px solid white; 
+    border-radius: 50%;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s all ease-out;
+}
+
+.footer .back-to-top-btn a
+{
+    color: var(--variant-color);
+}
+
+.footer .back-to-top-btn:hover 
+{
+    background-color: var(--white-color);
+}
+
+.footer .back-to-top-btn:hover a
+{
+    color: var(--gray-variant);
+}
+
+/*FOOTER STYLES*/
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 480px) 
