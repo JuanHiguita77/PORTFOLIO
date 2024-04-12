@@ -53,8 +53,10 @@
           <div class="col-12 col-lg-6 d-flex flex-column gap-2 ps-xl-5 pt-5 banner-left">  
             <h2 class="fw-bold text-light text-center">JUAN <br> FERNANDO<span class="text-secondary">.</span></h2>
             <hr class="w-50">
-            <button class="btn btn-outline-light w-50 w-md-25 rounded-0 mt-2 fs-6 fw-medium me-button">ABOUT ME</button>
-            <button class="btn btn-outline-light w-50 w-md-25 rounded-0 fs-6 fw-medium contact-button">CONTACT ME</button>
+
+            <a class="btn btn-outline-light w-50 w-md-25 rounded-0 mt-2 fs-6 fw-medium me-button" href="#talents-section"> ABOUT ME </a>
+   
+            <a class="btn btn-outline-light w-50 w-md-25 rounded-0 fs-6 fw-medium contact-button" href="#contact-section"> CONTACT ME </a>
           </div>
 
           <div class="col-12 col-lg-6 d-flex flex-column pe-lg-5 gap-4 gap-lg-2 text-white banner-right">
@@ -171,34 +173,57 @@
           <p class="text-center mx-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident accusantium enim eligendi distinctio dicta tempora illo fugiat amet soluta quia repudiandae pariatur ab commodi atque, saepe totam sit? Quisquam, aspernatur.</p>
 
           <div class="col-12 d-flex flex-wrap gap-4 justify-content-center align-items-center pt-5">
+
             <div class="col-10 col-md-8 col-lg-4 col-xl-3 mx-auto mx-xl-0">
               <div class="project-card">
-                <a href="#">
-                  <img class="img-fluid" src="" alt="project">
+                <a href="https://veterinary-admin.vercel.app">
+                  <img class="img-fluid" src="images/veterinary-img.png" alt="project">
 
                 </a>
               </div>
             </div>
+
             <div class="col-10 col-md-8 col-lg-4 col-xl-3 mx-auto mx-xl-0">
               <div class="project-card">
-                <a href="#">
-                  <img class="img-fluid" src="" alt="project">
+                <a href="https://notices-admin.vercel.app">
+                  <img class="img-fluid" src="images/notices-img.png" alt="project">
 
                 </a>
               </div>
             </div>
+
             <div class="col-10 col-md-8 col-lg-4 col-xl-3 mx-auto mx-xl-0">
               <div class="project-card">
-                <a href="#">
-                  <img class="img-fluid" src="" alt="project">
+                <a href="https://books-admin-sable.vercel.app">
+                  <img class="img-fluid" src="images/books-img.png" alt="project">
 
                 </a>
               </div>
             </div>
+
             <div class="col-10 col-md-8 col-lg-4 col-xl-3 mx-auto mx-xl-0">
               <div class="project-card">
-                <a href="#">
-                  <img class="img-fluid" src="" alt="project">
+                <a href="https://movie-searcher-axios.vercel.app">
+                  <img class="img-fluid" src="images/movie-img.png" alt="project">
+
+                </a>
+              </div>
+            </div>
+
+            <div class="col-10 col-md-8 col-lg-4 col-xl-3 mx-auto mx-xl-0">
+              <div class="project-card">
+                <a href="https://rocket-searcher-axios.vercel.app">
+                  <img class="img-fluid" src="images/rocket-img.png" alt="project">
+
+                </a>
+              </div>
+            </div>
+
+            <div class="col-10 col-md-8 col-lg-4 col-xl-3 mx-auto mx-xl-0">
+
+              <div class="project-card">
+                <a href="https://trash-counter.vercel.app">
+                  <img class="img-fluid" src="images/trash-img.png" alt="project">
 
                 </a>
               </div>
@@ -222,19 +247,19 @@
         </div>        
 
         <div class="col-12 col-lg-6 p-5">
-                  
+          
           <form class="d-flex flex-column gap-4 contact-form" action="https://formspree.io/f/mayrpaqy" method="POST">
             <div class="form-group">
-              <input type="text" class="form-input w-100" placeholder="Name">
+                <input type="text" class="form-input w-100" placeholder="Name" name="name" required>
             </div>
             <div class="form-group">
-              <input type="email" class="form-input w-100" placeholder="Email">
+                <input type="email" class="form-input w-100" placeholder="Email" name="email" required>
             </div>
             <div class="form-group">
-              <textarea class="form-input w-100" rows="5" placeholder="Tell me what I'm good for"></textarea>
+                <textarea class="form-input w-100" rows="5" placeholder="Tell me what I'm good for" name="message" required></textarea>
             </div>
             <button type="submit" class="btn btn-outline w-75 mx-auto send-button">Contact me</button>
-          </form>
+        </form>
 
         </div>
       </div>
