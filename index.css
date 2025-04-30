@@ -2421,3 +2421,85 @@
   background: #e83a41;
   transform: scale(1.1);
 }
+
+#portfolio
+{
+  background-color: #292d33;
+  padding: 25px;
+}
+
+
+.portafolio-slider {
+  text-align: center;
+  padding: 2rem;
+  
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+  background-color: #292d33;
+}
+
+.slide {
+  flex: 0 0 80%;
+  scroll-snap-align: center;
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.slide:hover {
+  transform: scale(1.02);
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+.custom-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra suave */
+  border-radius: 10px; /* bordes un poco redondeados */
+  padding: 16px;
+  background-color: #fff; /* fondo blanco para que resalte */
+  transition: transform 0.2s, box-shadow 0.2s; /* animaciones suaves */
+  text-align: center
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* efecto de "levantarse" al pasar el mouse */
+}
+
+.custom-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.custom-card-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.project-slider-tittle{
+  color: #fff;
+  margin-top: 0px !important;
+  text-align: center;
+}
+
+.project-slider-description{
+  color: #fff;
+  text-align: center;
+}
